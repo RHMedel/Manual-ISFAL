@@ -1,0 +1,57 @@
+\documentclass[11pt]{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{txfonts}
+%\usepackage{csquotes}
+%\usepackage{babelbib}
+%\usepackage{authblk}
+%\usepackage{makeidx}
+
+%\makeatletter
+\newcommand{\chapterauthor}[1]{%
+  {\parindent0pt\vspace*{-25pt}%
+  \linespread{1.1}\large\scshape#1%
+  \par\nobreak\vspace*{35pt}}
+  \@afterheading%
+}
+%\makeatother
+
+\newcommand{\mysection}[2]
+  {{\renewcommand{\sectionmark}[1]{}
+    \section{#1}}\sectionmark{#2}}
+    
+\title{Manual de la asignatura Ingeniería de Software de Fuentes Abiertas/Libre - versión 2022}
+\author{Ricardo Medel y colaboradores}
+
+\begin{document}
+\date{}
+\maketitle
+
+\tableofcontents
+%\listoffigures
+%\listoftables
+
+\include{prefacio}
+
+\include{introduccion}
+
+\include{licencias}
+
+\include{gestion}
+
+\include{negocios}
+
+\include{sistoperativos}
+
+\include{codificacion}
+
+\include{otros}
+
+\bibliographystyle{apalike}
+\bibliography{references}
+
+\end{document}

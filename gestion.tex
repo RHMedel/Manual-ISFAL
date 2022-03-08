@@ -1,0 +1,114 @@
+\chapter{Gestión de proyectos de software libre}
+%\chapterauthor{Borello Agustín, Donato Alexis, López Marcos, Mattio Paolo, Vilardo Milena}
+
+\section{Comunidades de software libre}
+
+Dadas las características del software libre, raramente una única empresa desarrolla un paquete de software, como es habitual con el software privativo. El software libre es desarrollado en el seno de comunidades de software libre.
+
+Una comunidad de software libre es un grupo de personas que cooperan entre sí para desarrollar, mantener o difundir uno o varios paquetes de software libre. Las personas en una comunidad pueden compartir una localidad o pueden estar distribuidas por el mundo. Una comunidad puede estar estrictamente organizada a través de reglamentos escritos y seguidos a rajatabla, o ser un grupo \emph{ad-hoc} sin demasiadas reglas. El liderazgo puede ser llevado adelante por una empresa, una organización, un grupo de personas o incluso una única persona.
+
+A través del uso de Internet las comunidades de software libre se distribuyen alrededor del mundo y les permite estar compuestas por personas de distinto género, nacionalidad, conocimientos previos, formación académica, culturas, idiomas y motivaciones. Esta diversidad enriquece el desarrollo del software y ha permitido crear complejos productos informáticos, tales como sistemas operativos o compiladores, pero también hace compleja la gestión de los grupos de desarrollo.
+
+Esta complejidad fue primero notada y analizada por Eric S. Raymond en una serie de artículos que luego se transformaron en su clásico libro ``La catedral y el bazar''~\cite{raymond01}, originalmente escrito en 1997, como un ensayo sobre la metodología de desarrollo del software de código abierto. En él analiza dos modelos de producción de software bien diferenciados. Por un lado, el modelo de desarrollo más hermético, planificado y vertical característico del software propietario, al que compara con la construcción de una catedral, donde cada pieza es cuidadosamente ensamblada por trabajadores bajo la guía de el/la o los/las arquitectos/as según un plan previamente trazado, sin que haya lugar a lanzar versiones de prueba antes de que haya llegado el momento de inaugurar la obra. Por el otro lado el modelo de desarrollo del kernel Linux, asimiliado por Raymond a un bazar persa\footnote{Si se quiere argentinizar la metáfora podríamos pensar en una de las ferias conocidas como Salada o ``saladitas''.} por su dinámica horizontal, caótica y bulliciosa, sin una planificación ni guía vertical estricta, formada por personas con diferentes objetivos y enfoques. Sorprendentemente, de ese caos aparente surge un sistema coherente, estable y útil, ya sea un bazar o el kernel de un sistema operativo. 
+
+Raymond detectó ciertas características de liderazgo de Linus Torvalds que son fundamentales en el éxito de Linux y de otras comunidades de software libre. Una de ellas es lanzar versiones de prueba enseguida y a menudo. Bajo el lema ``libere pronto, libere a menudo y escuche a los usuarios'', el lanzamiento continuo de versiones mejoradas del sistema permite minimizar la redundancia de esfuerzos mediante la difusión rápida de correcciones ya realizadas, además de proveer un estímulo y recompensa constante a los usuarios (especialmente a los más ansiosos) que realizarán una constante revisión en cada versión, permitiendo detectar los errores de forma temprana y minimizando el costo de cada error.
+
+Otra característica del liderazgo de Torvalds es delegar cuanto sea posible. Cualquier líder de una comunidad de software libre cuyo desarrollo dependa tan sólo de su cerebro va a estar siempre en desventaja frente al que sepa cómo crear un ambiente abierto y en evolución, en el cual tanto el desarrollo como la búsqueda de errores y las mejoras se confíen a cientos de personas.  
+
+Tratar a los usuarios como colaboradores permite mejorar con rapidez y depurar eficazmente un programa. Esto a su vez permite hacer crecer la comunidad. Un número mayor de usuarios encuentra más errores debido a que añade muchas más formas diferentes de forzar el programa. Dada una base lo suficientemente amplia de probadores y colaboradores, casi todos los problemas se identificarán con rapidez y su solución será obvia para alguien.  
+
+Para trabajar y competir con eficacia, quienes quieran desarrollar un proyecto en colaboración deben aprender a reclutar y motivar a la gente en base a intereses comunes y a conectar la individualidad de los/as colaboradores/as para llevarles a culminar objetivos difíciles solo alcanzables mediante una colaboración sostenida. Esto no quiere decir que la visión y la capacidad individual no importan. Los proyectos más exitosos de software libre son los que comienzan a partir de una idea y perserverancia de una persona pero que al mismo tiempo promueve la construcción de un grupo de trabajo con intereses comunes. 
+
+\section{Roles en la comunidad}
+
+Las personas que forman parte de una comunidad de software libre pueden cumplir varios roles: usuarios/as, diseñadores/as, desarrolladores/as, distribuidores/as, realizar soporte, traductores/as, instructores/as, entre otros. Sin embargo, existe una especie de categorización de los/as participantes: usuarios/as, contribuyentes\footnote{Para las personas que contribuyen al proyecto generalmente se usa el término en inglés \emph{contributors}, pero en este texto utilizaremos su versión en español.} y mantenedores/as. 
+
+\begin{itemize}
+\item{Usuario/a:} Quien comienza a utilizar un software libre con asiduidad se está uniendo a una comunidad de personas con un objetivo en común. Un/a usuario/a puede colaborar de muchas formas, tal como enviar informes de errores, realizar solicitudes de nuevas funcionalidades y promover el uso del software n ámbitos externos a la comunidad. Los/as usuarios/as proporcionan una muy necesaria retroalimentación a los contribuyentes y mantenedores.
+
+\item{Contribuyente:} Un/a contribuyente no solo reporta un error sino que investiga las causas y propone una solución o incluso la implementa. Para ser contribuyente no es necesario saber progrmar, se puede contribuir con código o con documentación. Puede que tengan voz en la toma de decisiones.
+
+\textbf{Mantenedor:} Los mantenedores son los/as líderes/sas del proyecto y comprometen mucho de su tiempo y energía en los proyectos. Normalmente, un mantenedor será el árbitro final de cualquier problema de diseño o codificación que surja dentro del proyecto. Es un título de prestigio, pero requiere una inversión superior en tiempo y esfuerzo. Son quienes deciden los pasos siguientes del proyecto y la orientación general de la comunidad.
+\end{itemize}
+
+Para pasar de usuario/a a contribuyente, e incluso avanzar en la complejidad e importancia de las contribuciones a un proyecto, existe un conjunto de pasos que se siguen, usualmente en forma escalonada, ya que cada paso requiere de mayor conocimiento del código del proyecto.
+
+\begin{itemize}
+     \item Instalar el software en la computadora personal.
+     \item Usar el software.
+     \item Si es el caso, instalar el software en un servidor Web. 
+     \item Participar de los foros de discusión.
+     \item Promover el software en ámbitos externos a la comunidad.
+     \item Realizar tareas de instrucción sobre el uso del software.
+     \item Traducir, mejorar o crear documentación.
+     \item Verificar las distintas versiones y reportar errores.
+     \item Modificar el código para personalizar una operación o corregir un error.
+     \item Crear un módulo para extender el software con una funcionalidad.
+     \item Aportar un módulo para ser incorporado en la versión oficial del proyecto.
+\end{itemize}
+
+El primer paso para pasar de usuario a involucrarse más personalmente en un proyecto de software libre es contactar a los mantenedores personalmente o a través de los foros en línea de la comunidad, ofrecer sus servicios y preguntar qué es lo que la comunidad está necesitando más en ese momento.
+
+%Se puede deducir que existe una gran influencia universitaria en el Software Libre. Esto no es de extrañar, ya que, como se ha podido ver en el capítulo de historia, el Software Libre –{\bf antes incluso de llevar esta denominación}– ha estado íntimamente ligado a las instituciones educativas superiores. Aún hoy, el verdadero motor del uso y expansión del Software Libre siguen siendo las universidades y los grupos de usuarios estudiantiles. No es, por tanto, de extrañar que más de un 70\% de los desarrolladores cuenten con una preparación universitaria. El dato tiene mayor importancia si tenemos en cuenta que del 30\% restante muchos no son universitarios porque todavía están en su fase escolar. Aun así, también tienen cabida –{\bf y no por ello son menos apreciados}– desarrolladores que no han accedido nunca a estudios superiores, pero que son amantes de la informática.
+
+
+\section{Toma de decisiones}
+
+Arriba hemos mencionado que tanto contribuyentes como mantenedores/as aportan a la toma de decisiones dentro de la comunidad. En particular, el involucramiento en la toma de decisiones dependerá de varios factores, tanto personales como del proyecto.
+
+\begin{itemize}
+     \item Experiencia e involucramiento de la persona en la comunidad: A más tiempo y dedicación a la comunidad, mayor será el nivel de responsabilidad y poder de toma de decisiones de una persona.
+     \item Nivel de impacto de la decisión a tomar en el proyecto: Las decisiones más importantes son tomadas por un grupo de personas a cargo, generalmente decisiones respecto al \emph{core}. Para decisiones de menor impacto las discusiones son menos, como la mejora de características de un paquete.
+     \item Pertenencia a diferentes áreas del proyecto: Dentro de un proyecto de software existen diferentes áreas con (usualmente) diferentes responsables, por lo que ellos/as son quienes pueden tomar decisiones y guiar a sus miembros para llevarlas a cabo.
+\end{itemize}
+
+Más allá de las características personales de los/as miembros de la comunidad y de las características técnicas del software desarrollado, existen diferentes estilos de toma de decisiones utilizados por las comunidades de software libre.
+
+\begin{itemize}
+\item Monárquico: Donde las decisiones mas importantes del proyecto son llevadas a cabo por una persona o líder (por ejemplo, Linux).
+\item Comunitaria: Se toman las decisiones de manera democrática y no existe una persona o rol central en el proyecto (por ejemplo, PostgreSQL).
+\item Corporativa: El liderazgo del proyecto lo tiene una empresa privada o una fundación sin fines de lucro, y son ellas quienes toman las principales decisiones de manera formal (por ejemplo, Fedora de la empresa Red Hat o Firefox de la Fundación Mozilla).
+\end{itemize}
+
+Cabe destacar que entre los estilos Monárquicos y Comunitarios existe todo un espectro de posibles estilos intermedios, donde el número de quienes pueden participar (con voz o voto) en la toma de decisiones se va ampliando desde una única persona en el Monárquico a toda la comunidad en el Comunitario.
+
+Además, otro aspecto importante en la toma de decisiones dentro de un proyecto de software libre es que en general el mérito dentro de la comunidad es tenido en cuenta. Aquellas personas que han contribuido de manera importante y que han ganado credibilidad con respecto a sus habilidades dentro de la comunidad son las que serán tenidas en cuenta a la hora de tomar una decisión, sea cual fuera la estructura de un proyecto.
+
+\section{Comunicaciones en la comunidad}
+
+Debido a la naturaleza de los proyectos de software libre y a que los participantes de estos pueden trabajar desde ubicaciones muy distantes, cobran una gran importancia los distintos medios de comunicación que se utilizan, tanto para coordinar las actividades de la comunidad, como para comunicar al exterior las novedades del proyecto.
+
+La comunicación se hace principalmente a través de Internet, utilizando las siguientes herramientas.
+
+\begin{itemize}
+     \item Sitio web: permite transmitir la información del proyecto al público en general y dar a conocer actualizaciones, decisiones y problemas.
+     \item Listas de correo electrónico: permite la comunicación y discusión horizontal en la comunidad y es el más sencillo de implementar, pero es el más lento debido a que es asincrónico.
+     \item Mensajería instantánea: sirven para la publicación de problemas, proponer soluciones y llevar adelante discusiones, permitiendo la participación sincrónica y horizontal.
+\end{itemize}
+
+La moderación de estos espacios de discusión es un tema muy importante en una comunidad de software libre y la falta de control puede llevar a que se tengan experiencias personales y profesionales muy negativas que lleven a la disgregación de la comunidad.
+
+%\section{¿Cómo se hace disponible el codigo fuente del proyecto?}
+\section{Herramientas de gestión}
+%código fuente y sistemas de gestión de errores
+
+Existen dos canales de comunicación fundamentales en una comunidad de software libre que lleva adelante el desarrollo de un proyecto de software: el código fuente y las descripciones de \emph{issues} (con esta palabra en inglés describimos tanto a los errores detectados como a las mejoras propuestas o a las  nuevas funcionalidades deseadas para un software). Para su gestión existen herramientas digitales que permiten ordenar su uso, modificación y almacenamiento.
+
+El código fuente de un software libre es requerido por definición y también para poder hacer el desarrollo a través de un grupo, generalmente distribuido globalmente. Para esto se utilizan servicios de infraestructura de alojamiento en la web, que no solo dan posibilidad de tener un lugar en el internet donde se puede tener acceso a las fuentes del proyecto, sino que brindan herramientas que facilitan la gestión del proyecto, tales como el manejo de permisos de modificación, publicación de \emph{issues}, revisión de código propuesto y el almacenamiento de versiones anteriores.
+
+En la actualidad los servicios más populares para este fin (aunque no son exclusivos para proyectos de software libre, ya que otros grupos o empresas pueden almacenar su código allí) son GitHub\footnote{GitHub: \url{https://github.com/}} y GitLab\footnote{GitLab: \url{https://gitlab.com/}}.
+
+Estos servicios proveen, como dijimos, un conjunto completo de herramientas de gestión. En particular herramientas para gestión de \emph{issues} y para control de versiones. Un \emph{issue} es un problema o error detectado en el software o una tarea para realizar, ya sea una mejora, una corrección o el agregado de alguna funcionalidad al software. Dijimos previamente que uno de los roles de los/as usuarios/as avanzados/as en una comunidad de software libre era detectar errores en el software. A través de un sistema de gestión de \emph{issues} los/as usuarios/as pueden reportar dichos errores en una forma normalizada, que exige la información mínima necesaria para que el error pueda ser reproducido y una solución propuesta por los/as contribuyentes. Además, información extra puede ser agregada o discutida por otros/as miembros de la comunidad, e incluso se pueden agregar rótulos que indican la prioridad o el tipo de error (por ejemplo, se los puede rotular como ``crítico'' o ``adecuado para principiante''). Los repositorios de código mencionados proveen sus propios sistemas de gestión de \emph{issues}, aunque también existen sistemas independientes, como por ejemplo Bugzilla\footnote{Bugzilla: \url{https://www.bugzilla.org/}}.
+
+
+Para cualquier proyecto de software, es muy importante la implementación de un sistema de control de versiones para poder gestionar los diversos cambios que se realizan sobre sus componentes. Esto cobra una importancia aún mayor en proyectos de software libre, ya que la heterogeneidad de su comunidad de contribuyentes requiere que las modificaciones al código tengan un control más estricto. Aunque existen muchos sistemas de control de versiones, tales como Subversion\footnote{Apache Subversion: \url{https://subversion.apache.org/}} (o SVN) y Mercurial\footnote{Mercurial: \url{https://www.mercurial-scm.org/}}, el más difundido en la actualidad es Git\footnote{Git: \url{https://git-scm.com/}}, creado originalmente por Linus Torvalds y que es la base de los dos repositorios mencionados (de ahí sus nombres).
+
+
+\section{Control de calidad}
+
+El enfoque actual para asegurar la calidad del software es utilizar procedimientos estándares durante el proceso de desarrollo, guiados por equipos de aseguranza de la calidad del software (QA, por las siglas de \emph{Quality Assurance}). Implementar estos estándares es un desafío para las comunidades de software libre, ya que usualmente siguen un modelo horizontal al estilo bazar.
+
+Algunas falencias comunes son la falta de pruebas unitarias asociadas al código presentado para su inclusión en el software siendo desarrollado, la inexistencia de ciclos de testing llevados adelante por un grupo o departamento de calidad independiente de los/as desarrolladores/as y la baja calidad de los reportes de defectos, con información incompleta o poco precisa, ya que usualmente son escritos por usuarios/as sin formación en informática. Actualmente, gracias al auge de los procesos de integración continua y a la integración de herramientas que los implementan en los repositorios, se han mejorado los primeros dos aspectos mencionados, ya que se exige que el código incluya pruebas unitarias y se ejecutan conjuntos de pruebas en forma automática antes de aprobar la solicitud de inclusión del código en el proyecto (usualmente llamado, en el ambiente de Git, \emph{pull request}). 
+
+Respecto al bajo nivel de los reportes de defectos o \emph{issues}, debe tenerse en cuenta que son el resultado de dos características positivas del software libre: el lanzamiento continuo de versiones mejoradas (las cuales aún tienen defectos conocidos o pueden tener nuevos defectos no detectados antes de su lanzamiento) y el involucramiento de toda la comunidad en la búsqueda de errores en el software. El problema puede minimizarse dedicando tiempo de los/as contribuyentes y mantenedores/as a la revisión detallada de los defectos reportados, de modo que ningún defecto sea considerado como aceptado hasta que un/a desarrollador/a experimentado/a lo revise, reproduzca y apruebe.
+

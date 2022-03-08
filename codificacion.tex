@@ -1,0 +1,432 @@
+\chapter{Las reglas en una comunidad}
+%\chapterauthor{Chincho, Braian; Prado, Federico; Pucheta, Fernanda}
+
+En toda comunidad se deben tener reglas, y como tal, las comunidades de software libre no son la excepción. En particular, las comunidades de software libre suelen estar distribuidas globalmente, por lo cual se deben armonizar las diferentes costumbres y expectativas de comportamiento para las personas participantes de un proyecto.
+
+En principio podríamos dividir las reglas de una comunidad de software libre en dos aspectos: código de conducta y reglas de diseño y programación. En las siguientes secciones cubriremos someramente estos aspectos, que a veces se combinan en un único conjunto de reglas.
+
+\section{Código de conducta}
+
+Se aconseja establecer un código de conducta tan pronto como sea posible. Idealmente debe hacerse al comenzar el proyecto y crear la comunidad, y debe establecerse por escrito, usualmente en un archivo denominado \texttt{codigo\_de\_conducta} en el directorio raíz del proyecto y enlazar al mismo desde el archivo \texttt{Read.me} para que se encuentre visible a toda la comunidad.
+
+Algunas reglas de códigos de conducta que recurrentemente vemos en las mejores comunidades son las siguientes.
+
+\begin{itemize}
+\item Respetar las personas que forman la comunidad, cualquiera sea su rol o nivel de participación.
+\item Debatir y estudiar cualquier cambio significativo antes de comprometerse.
+\item En caso de duda sobre cualquier procedimiento, preguntar primero a personas más experimentadas (aunque, si existen historiales de discusiones previas, primero debe asegurarse de que no sea una pregunta ya contestada o discusión ya concluida).
+\item Ejecutar pruebas en los cambios del código antes de proponerlos.
+\item No asumir compromisos que no se podrán cumplir.
+\item Documentar el trabajo realizado.
+\item Informar regularmente a otros del progreso propio.
+\end{itemize}
+
+Además de comunicar las expectativas de comportamiento, un código de conducta debería describir cómo se aplica y qué sucede en caso de que no se cumplan dichas reglas.
+
+\begin{itemize}
+	\item Dónde tendrán efecto las reglas de conducta: en las actividades técnicas del proyecto (\emph{issues} y \emph{pull requests}), en las comunicaciones (foros, emails, chat) y/o en actividades presenciales de la comunidad (eventos).
+	\item A quién o a quiénes se les aplicará el código de conducta (es decir, a quiénes se les considera parte de la ``comunidad'').
+	\item De qué manera puede reportarse una violación del código de conducta.
+	\item Quién (o quiénes) determinan si efectivamente ha ocurrido una violación del código de conducta.
+	\item Qué ocurrirá en caso de que alguien viole el código de conducta. 
+\end{itemize}
+
+Estos tres últimos puntos son claves. Debe explicarse de qué manera se reportan violaciones al código, quién determina si fue una violación y cuáles serán las consecuencias para quien lo haya hecho. Esto demostrará la intención de tomar acciones cuando sea necesario, hará sentir a la comunidad más segura respecto a que sus reclamos son revisados, a la vez que brindará a la comunidad la seguridad de que el proceso de revisión es justo y transparente.
+
+Luego de recibida una denuncia, las personas responsables de analizarla deben recolectar toda la información posible acerca de la situación. Hay que considerar, entre otras cuestiones, si la persona reportada lo es por primera vez o si es reincidente (para lo cual debería mantenerse un registro de denuncias y sanciones).
+
+Luego de recolectar y procesar suficiente información, las personas a cargo deben decidir qué acción tomar, en base al código de conducta (nunca tomar decisiones por fuera de dicho código). Se debe tener en mente que el objetivo es fomentar un ambiente seguro, respetuoso y colaborativo en la comunidad, no castigar por el solo hecho de mostrar que se puede o tomar revancha por algún problema previo. Las acciones a tomar pueden ir desde una advertencia pública a la persona en falta, explicando cómo su comportamiento ha impactado negativamente en los demás y cómo se espera que actúe en el futuro, hasta, en casos de extrema gravedad y reincidencia, expulsarla de la comunidad en forma temporal o permanente.
+
+\section{Reglas de diseño}
+
+Las reglas de diseño y programación sirven de guía para el desarrollo en general, guiando a la comunidad en la toma de decisiones al resolver una tarea y para minimizar el esfuerzo de leer e interpretar el código escrito por otros miembros, ya que la mayoría del tiempo de desarrollo se estará modificando, corrigiendo o mejorando código ya escrito.
+
+Como en muchos otros ámbitos, en el desarrollo de software existen diferentes caminos posibles para resolver un problema y cada uno de ellos tendrá sus ventajas y desventajas. Las reglas de diseño intentan ser una guía para que la comunidad pueda evaluar las decisiones propuestas durante la resolución de un problema.
+
+Este tipo de reglas son comunes en cualquier equipo de desarrollo, ya sea de software libre o privativo, de empresas o comunidades, de grupos localizados o de grupos globales; pero al ser las comunidades de software libre grupos heterogéneos y globalizados, es muy recomendable poner estas reglas por escrito lo antes positle. Algunas reglas de diseño y programación que recurrentemente vemos en los mejores equipos de desarrollo son las siguientes.
+
+\begin{enumerate}
+\item Modularidad: escribir partes simples conectadas por interfaces simples. La modularidad es la descomposición de un sistema complejo en piezas más simples, llamadas ``módulos''. De esta manera el código fuente de un módulo puede ser escrito y mantenido independientemente del código fuente de otros módulos. 
+
+\item Claridad: la premisa consiste en ser claro a la hora de escribir código. La claridad en un programa es muy importante, ya que la mayor parte del tiempo de mantenimiento del mismo se emplea en estudiar y comprender el código existente.
+
+\item Economía: el tiempo del programador es caro y es por ésto que hay que conservarlo y buscar ser lo más eficiente posibles. 
+
+\item Separación: consiste en separar las reglas del funcionamiento y las interfaces del mecanismo. Se recomienda realizar una separación en capas que se encarguen de distintas funciones.
+
+\item Simplicidad: diseñar para la simplicidad, añadiendo complejidad sólo donde sea estrictamente necesario. Escribir código complejo sólo cuando sea evidente que no existe otra solución posible.
+
+\item Transparencia: diseñar para la visibilidad, para hacer más fácil la inspección y la corrección de fallos.
+
+\item Representación: convierte el conocimiento en datos, para que la lógica de los programas pueda ser sencilla y robusta.
+
+\item Mínima Sorpresa: cuando se usa un sistema, se construye un modelo mental de la manera en que el mismo actuará, y si el sistema se comporta de manera inesperada, las personas que lo utilizan se confundirán.
+
+\item Silencio: cuando un programa no tenga nada necesario que decir a la persona que lo usa, no debería decir nada.
+
+\item Reparación: cuando se produzca un error, el mismo debe ser claro y mostrarse lo antes posible.
+
+\item Generación: evitar hacer cosas a mano; escribir programas que escriban programas siempre que se pueda.
+
+\item Diversidad: desconfiar de las afirmaciones tipo ``esta es la única forma de hacerlo'', todos los problemas pueden resolverse de diferentes maneras. 
+
+\item Extensibilidad: diseñar para el futuro, que el programa tenga bases sólidas desde el comienzo que le permitan crecer.
+\end{enumerate}
+
+\section{Reglas de programación}
+
+Por su parte, las reglas de programación generalmente indican qué ``estilo'' darle al código, como por ejemplo la cantidad y tipo de caracteres que se utilizan para indentar (espacios o \emph{tabs}), cómo alinear las distintas partes de las estructuras del código y convenciones respecto de los nombres utilizados para las variables. 
+
+Estas reglas no cambian en sí mismo el programa resultante (como sí lo hacen las reglas de diseño), pero sí facilitan la lectura del código entre los integrantes de la comunidad, algo clave cuando los grupos son tan heterogéneos como en las comunidades globales de software libre.
+
+Existen herramientas automáticas que permiten evaluar si un código aportado a un proyecto cumple con las reglas de programación. Usualmente, además de ejecutar los tests funcionales, es obligatorio ejecutar estas herramientas antes de hacer un \emph{pull request}.
+
+
+\section{Ejemplos}
+
+En esta sección presentamos códigos de conducta y reglas de diseño y programación de algunas comunidades, a modo de ejemplo. Unificamos los ejemplos de reglas de conducta, de diseño y de programación en una única sección porque, como se verá a continuación, las reglas de las comunidades de software libre muchas veces combinan los tres tipos de reglas.
+
+\subsection{Código de conducta de Debian}
+
+El código de conducta de la distribución ``madre'' Debian\footnote{Código de conducta de Debian: \url{https://www.debian.org/code_of_conduct.es}} es el siguiente.
+
+\begin{enumerate}
+\item {\bf Sea respetuoso.} En un proyecto del tamaño de Debian, inevitablemente habrá personas con las cuales estará en desacuerdo, o le resulte difícil cooperar. Acéptelo, y aun así, siga siendo respetuoso. El desacuerdo no es excusa para un comportamiento pobre o ataques personales y una comunidad donde la gente se sienta amenazada no es una comunidad sana.
+
+\item {\bf Asuma buena fe.} Los contribuidores de Debian tienen muchas maneras de alcanzar nuestro objetivo común de un sistema operativo libre, que pueden diferir de sus maneras. Asuma que las otras personas están trabajando hacia este objetivo.
+
+Tenga en cuenta que muchos de nuestros contribuidores no son hablantes nativos de inglés, o pueden tener distintos rasgos culturales.
+
+\item {\bf Sea colaborador.} Debian es un proyecto grande y complejo; siempre hay algo que aprender dentro de Debian. Es bueno pedir ayuda si la necesita. Igualmente, las propuestas de ayuda deben verse en el contexto de nuestro objetivo común de mejorar Debian.
+
+Cuando haga algo para beneficio del proyecto, esté dispuesto a explicar a otros cómo funciona, así pueden construir en base a su trabajo, e incluso mejorarlo.
+
+\item {\bf Intente expresarse concisamente.} Tenga presente que lo que escribe una vez lo leerán cientos de personas. Escribir un correo electrónico corto significa que la gente pueda entender la conversación de la manera más eficientemente posible. Cuando se necesita una explicación larga, considere añadir un resumen.
+
+Intente proporcionar argumentos nuevos a una conversación, para que cada correo agregue algo único al hilo, teniendo presente que el resto del hilo sigue conteniendo los otros mensajes con los argumentos que ya se han dado.
+
+Intente mantenerse dentro del tema, especialmente en discusiones que ya son bastante largas.
+
+\item {\bf Sea abierto.} Muchas vías de comunicación usadas en Debian permiten comunicación pública y privada. Según el párrafo tres del contrato social, debería usar preferentemente métodos públicos de comunicación para mensajes relacionados con Debian, a no ser que publique información sensible.
+
+Esto también se aplica para mensajes de ayuda o soporte relacionados con Debian; una petición pública de soporte no sólo le proporcionará una respuesta con más probabilidad, sino que también posibilita que los errores inadvertidos que cometan las personas que responden a su pregunta se detecten más fácilmente y se corrijan.
+
+\item {\bf En caso de problemas.} Aunque los participantes deberían adherirse a este código de conducta, reconocemos que a veces las personas pueden tener un mal día, o no estar al tanto de alguna de las directrices de este código de conducta. Cuando eso ocurre, puede responderles y dirigirles a este código de conducta. Esos mensajes pueden ser públicos o privados, como sea más apropiado. Sin embargo, ya sea el mensaje público o privado, debería seguir las partes relevantes de este código de conducta; en particular, no debería ser abusivo o irrespetuoso. Asuma buena fe, es más probable que los participantes no se den cuenta de su mal comportamiento que que intenten conscientemente degradar la calidad de la discusión.
+
+Se inhabilitará temporal o permanentemente la comunicación por cualquiera de los medios de Debian a los ofensores graves o reincidentes. Las quejas deben dirigirse (en privado) a los administradores del foro de comunicación de Debian en cuestión. Para encontrar información de contacto sobre los administradores, vea la página de la estructura organizativa de Debian.
+
+\end{enumerate}
+
+%\subsection{Reglas de \texttt{coreutils}}
+%
+%\begin{verbatim}
+%Curly braces: use judiciously
+%=============================
+%Omit the curly braces around an "if", "while", "for" etc. body only when
+%That body occupies a single line.  In every other case we require the braces.
+%This ensures that it is trivially easy to identify a single-*statement* loop:
+%Each has only one *line* in its body.
+%
+%Omitting braces with a single-line body is fine:
+%
+% 	while (expr)
+%   	single_line_stmt ();
+%
+%However, the moment your loop/if/else body extends onto a second line,
+%for whatever reason (even if it's just an added comment), then you should
+%Add braces.  Otherwise, it would be too easy to insert a statement just
+%before that comment (without adding braces), thinking it is already a
+%multi-statement loop:
+%
+% 	while (true)
+%   	/* comment... */  	// BAD: multi-line body without braces
+%   	single_line_stmt ();
+%
+%Do this instead:
+%
+% 	while (true)
+%   	{  /* Always put braces around a multi-line body.  */
+%     	/* explanation... */
+%     	single_line_stmt ();
+%   	}
+%
+%There is one exception: when the second body line is not at the same
+%indentation level as the first body line.
+%
+% 	if (expr)
+%   	error (0, 0, _("a diagnostic that would make this line"
+%                  	" extend past the 80-column limit"));
+%
+%It is safe to omit the braces in the code above, since the
+%further-indented second body line makes it obvious that this is still
+%a single-statement body.
+%
+%To reiterate, don't do this:
+%
+% 	if (expr)
+%   	while (expr_2)    	// BAD: multi-line body without braces
+%     	{
+%       	...
+%     	}
+%
+%Do this, instead:
+%
+% 	if (expr)
+%   	{
+%     	while (expr_2)
+%       	{
+%         	...
+%       	}
+%   	}
+%\end{verbatim}
+%
+%En síntesis, si el cuerpo de un \texttt{if}, \texttt{for} o \texttt{while} tiene muchas líneas o se ``ve'' como si tuviera muchas líneas, entonces se DEBEN usar las llaves (\{\}). Sólo si el cuerpo es exactamente una línea entonces se permite evitar las llaves.
+
+\subsection{Estándares de codificación de GNU}
+
+El proyecto GNU de la FSF tiene su estándar de codificación\footnote{GNU Coding Standards: \url{https://www.gnu.org/prep/standards/standards.html}} a fin de obtener un sistema GNU limpio, consistente y fácil de instalar. Proponen que se lea como una guía para escribir programas C en forma portable, robusta y confiable. Pero no solo se refiere a cómo escribir programas sino también a cómo asignarle números a las versiones o cómo referenciar código y documentación que no tengan licencias libres. A modo de ejemplo, incluimos sólo una subsección de reglas (la 5.1), traducidas del original en inglés en forma libre por los y las autoras de este manual.
+
+\textbf{5.1 Formato de su código fuente}
+
+Por favor, mantenga la longitud de las líneas de código en 79 caracteres o menos, a fin de maximizar la legibilidad en la amplia gama de entornos.
+
+Es importante poner la llave de apertura que comienza el cuerpo de una función C en la columna 1, de modo que comience la definición de la función. Varias herramientas buscan la llave de apertura en la columna 1 para encontrar el comienzo de la función. Estas herramientas no funcionarán con código que no tenga ese formato.
+
+Evite poner llaves, paréntesis o corchetes de apertura en la columna 1 cuando están dentro de una función. La llave de apertura que comienza el cuerpo de una estructura puede ir en la columna 1 si encuentra útil tratarla como la definición de una función.
+
+También es importante poner, en la definición de una función, su nombre en la columna 1. Esto ayuda a las personas a buscar por definiciones de funciones, y puede ayudar a ciertas herramientas a reconocerlas. Así, usando sintaxis estándar de C, el formato de \texttt{concat} es:
+
+\begin{verbatim}
+static char *
+concat (char *s1, char *s2)
+{
+  …
+}
+\end{verbatim}
+
+O bien, si desea utilizar la sintaxis C tradicional:
+
+\begin{verbatim}
+static char *
+concat (s1, s2)        /* Name starts in column one here */
+     char *s1, *s2;
+{                     /* Open brace in column one here */
+  …
+}
+\end{verbatim}
+
+En C estándar, si los argumentos no entran bien en una línea, se dividen así:
+
+\begin{verbatim}
+int
+lots_of_args (int an_integer, long a_long, short a_short,
+              double a_double, float a_float)
+…
+\end{verbatim}
+
+Para tipos \texttt{struct} y \texttt{enum}, también deben ponerse las llaves en la columna 1, a menos que todo el contenido entre en una única línea:
+
+\begin{verbatim}
+struct foo
+{
+  int a, b;
+}
+\end{verbatim}
+
+O bien:
+
+\begin{verbatim}
+struct foo { int a, b; }
+\end{verbatim}
+
+El resto de esta sección da recomendaciones sobre otros aspectos del estilo de formato para C, el cual también es el estilo por defecto para el programa en su versión 1.2 o superior. Corresponde a las opciones:
+
+\begin{verbatim}
+-nbad -bap -nbc -bbo -bl -bli2 -bls -ncdb -nce -cp1 -cs -di2
+-ndj -nfc1 -nfca -hnl -i2 -ip5 -lp -pcs -psl -nsc -nsob
+\end{verbatim}
+
+No creemos que estas recomendaciones sean requisitos, porque no se producen problemas para los usuarios si dos programas diferentes tienen distintos estilos de formato.
+
+Pero cualquiera sea el estilo que uses, por favor, úsalo consistentemente, ya que una mezcla de estilos dentro de un mismo programa tiende a verse feo. Si estás aportando cambios a un programa existente, por favor sigue el estilo de dicho programa.
+
+Para el cuerpo de una función, nuestro estilo recomendado luce como este:
+
+\begin{verbatim}
+if (x < foo (y, z))
+  haha = bar[4] + 5;
+else
+  {
+    while (z)
+      {
+        haha += foo (z, z);
+        z--;
+      }
+    return ++x + bar ();
+  }
+\end{verbatim}
+ 
+Encontramos que es más fácil leer un programa cuando tiene espacios antes de los paréntesis de apertura y después de las comas. Especialmente después de las comas.
+
+Cuando divides una expresión en múltiples líneas, divídelas antes de un operador, no después. Esta es la forma correcta:
+
+\begin{verbatim}
+if (foo_this_is_long && bar > win (x, y, z)
+    && remaining_condition)
+\end{verbatim}
+
+Intenta evitar tener dos operadores de precedencia diferente al mismo nivel de indentación. Por ejemplo, no escribas esto:
+
+\begin{verbatim}
+mode = (inmode[j] == VOIDmode
+        || GET_MODE_SIZE (outmode[j]) > GET_MODE_SIZE (inmode[j])
+        ? outmode[j] : inmode[j]);
+\end{verbatim}
+
+En vez de esto, utiliza paréntesis extra, de modo que la indentación muestre el anidamiento:
+
+\begin{verbatim}
+mode = ((inmode[j] == VOIDmode
+         || (GET_MODE_SIZE (outmode[j]) > GET_MODE_SIZE (inmode[j])))
+        ? outmode[j] : inmode[j]);
+\end{verbatim}
+
+Inserta paréntesis extra así Emacs\footnote{Emacs es un editor de textos desarrollado y propuesto por el proyecto GNU: \url{https://www.gnu.org/software/emacs/}} indentará el código adecuadamente. Por ejemplo, la indentación siguiente luce bien si la haces a mano:
+
+\begin{verbatim}
+v = rup->ru_utime.tv_sec*1000 + rup->ru_utime.tv_usec/1000
+    + rup->ru_stime.tv_sec*1000 + rup->ru_stime.tv_usec/1000;
+\end{verbatim}
+
+Pero Emacs la alteraría. Agregando un conjunto de paréntesis produce algo que luce igual de bien, y que Emacs preservará:
+
+\begin{verbatim}
+v = (rup->ru_utime.tv_sec*1000 + rup->ru_utime.tv_usec/1000
+     + rup->ru_stime.tv_sec*1000 + rup->ru_stime.tv_usec/1000);
+\end{verbatim}
+
+Formatea las sentencias \texttt{do-while} de esta forma:
+
+\begin{verbatim}
+do
+  {
+    a = foo (a);
+  }
+while (a > 0);
+\end{verbatim}
+
+Por favor, usa Control-L para dividir el programa en páginas en lugares lógicos (pero no dentro de una función). No importa cuán largas son las páginas, dado que no tienen que entrar en una página impresa.
+ 
+
+\subsection{Reglas del núcleo Linux}
+
+Los/as programadores/as del núcleo Linux tienen 20 reglas muy estrictas\footnote{Linux kernel coding style: \url{https://www.kernel.org/doc/html/v4.10/process/coding-style.html}}. Debido a su longitud, aquí solo mostraremos dos de ellas, traducidas libremente por las/os autoras/es de este manual, que creemos muestran el nivel de detalle al que se llega\footnote{A pesar de ser reglas muy detalladas y estrictas, las lectoras y los lectores notarán que están escritas jocosamente. Es más, comienzan con esta ``mojada de oreja'' al proyecto GNU: ``Antes que nada, sugiero imprimir una copia de los estándares de codificación de GNU y NO leerla. Quémela, es un gran gesto simbólico.''}.
+
+\textbf{1) Indentación}
+
+Los tabs tienen una longitud de 8 caracteres, y por lo tanto las indentaciones también tienen una longitud de 8 caracteres. Hay movimientos heréticos que intentan hacer indentacions de 4 (¡o incluso 2!) caracteres, y eso es similar a definir el valor del número \emph{pi} como 3.
+
+Explicación: la idea de indentar es definir claramente dónde comienza y termina un bloque de control. Especialmente cuando has estado mirando a la pantalla durante 20 horas, encontrarás mucho más fácil ver como funciona la indentación si es lo suficientemente grande.
+
+Ahora, algunas personas indican que tener indentaciones de 8 caracteres hace que el código se mueva muy a la derecha y hace difícil leerlo en una terminal de 80 caracteres. La respuesta a esto es que si necesitas más de 3 niveles de indentación, te mandaste una macana y deberías arreglar tu programa.
+
+Resumiendo, indentaciones de 8 caracteres hacen las cosas más fáciles de leer y tienen el beneficio adicional de alertarte cuando estás anidando las funciones demasiado profundamente. Debes prestar atención a eso.
+
+El modo preferido de reducir los múltiples niveles de indentación en una sentencia \texttt{switch} es alinear el \texttt{switch} y sus rótulos en la misma columna, en vez de aplicar una indentación más a cada rótulo. Por ejemplo:
+
+\begin{verbatim}
+switch (suffix) {
+case 'G':
+case 'g':
+        mem <<= 30;
+        break;
+case 'M':
+case 'm':
+        mem <<= 20;
+        break;
+case 'K':
+case 'k':
+        mem <<= 10;
+        /* fall through */
+default:
+        break;
+}
+\end{verbatim}
+
+No pongas múltiples sentencias en una misma línea a menos que tengas algo que esconder:
+
+\begin{verbatim}
+if (condition) do_this;
+  do_something_everytime;
+\end{verbatim}
+
+No pongas tampoco múltiples asignaciones en una única línea. El estilo de codificación del núcleo es super simple. Evita expresiones engañosas.
+
+Aparte de los comentarios, la documentación y en Kconfig, los espacios nunca deben ser usados para indentación, y en el ejemplo de arriba esta regla está rota a propósito.
+
+Utiliza un editor decente y no dejes espacios en blanco al final de las líneas.
+
+\textbf{4) Nombres}
+
+C es un lenguaje espartano\footnote{Aquí ``espartano'' no significa que nació en Esparta, sino que es un lenguaje austero.}, y así debería ser tu forma de asignar nombres. De manera diferente a como hacen los/as programadores/as de Modula-2 y de Pascal, los/as programadores/as C no usan lindos nombres como EstaVariableEsUnContadorTemporario. Un/a programador/a C llamaría a esta variable como \texttt{tmp}, lo cual es mucho más fácil de escribir y no más dificultoso de entender.
+
+SIN EMBARGO, mientras nombres con mayúsculas y minúsculas son mal vistos, los nombres descriptivos para las variables globales son necesarios. Llamar \texttt{foo} a una función global es una ofensa pagada con la muerte.
+
+Las variables GLOBALES (que deben ser utilizadas solamente si las necesitas) deben tener nombres descriptivos, igual que las funciones globales. Si tienes una función que cuenta el número de usuarios activos, deberías llamarla \texttt{count\_active\_users()} o algo similar, en vez de llamarla \texttt{cntusr()}.
+
+Codificar el tipo de la función en el nombre (la así llamada ``notación húngara'') es de locos - de todas maneras el compilador conoce los tipos y puede chequearlos, y esto solo confunde al programador. No es sorpresa que Microsoft haga programas con errores.
+
+Los nombres de variables LOCALES deberían ser cortos y al pie. Si tienes algún contador de ciclos, debería llamarse \texttt{i}. Llamarlo \texttt{loop\_counter} es antiproductivo, no hay chances de que \texttt{i} no se entienda. Similarmente, \texttt{tmp} puede ser cualquier variable que se use para contener un valor temporario.
+
+Si tienes miedo de confundir los nombres de tus variables locales, entonces tienes otro problema, el cual es llamado síndrome de desbalanceo de la hormona de crecimiento en la función. Ver el capítulo 6 (Funciones). 
+
+
+%\subsection{Reglas de Unix}
+%
+%Rob Pike, uno de los grandes maestros del lenguaje C, propuso las siguientes reglas de diseño para sistemas Unix.
+%
+%\begin{enumerate}
+%
+%\item\textbf{Cuellos de botella:}
+%No se puede predecir dónde un programa estará gastando más tiempo, producto de un cuello de botella. Los cuellos de botella ocurren en lugares inesperados, así que no trate de adivinar o de suponer estas trabas de velocidad hasta que haya demostrado con total seguridad dónde está el bottlenecks.
+%
+%\item\textbf{Medir:}
+%No suponga que una parte del código es lenta hasta que se la mida.
+%
+%\item\textbf{Algoritmos sofisticados:}
+%Los algoritmos sofisticados son lentos cuando $n$ es pequeño, y $n$ es generalmente pequeño. Los algoritmos sofisticados tienen constantes grandes. Hasta que no sepas que $n$ con frecuencia va a ser grande, no hagas algoritmos sofisticados. (Incluso si $n$ se hace grande, use primero la Regla 2.)
+%
+%\item\textbf{Simplicidad:}
+%Utilice algoritmos simples, así como estructuras de datos simples.
+%
+%\item\textbf{Los datos dominan:}
+%Si ha elegido las estructuras de datos adecuadas y tienen las cosas bien organizadas, los algoritmos casi siempre serán evidentes, entendibles y simples. Las estructuras de datos, no los algoritmos, son fundamentales para la programación.
+%
+%\end{enumerate}
+
+\subsection{Zen of Python}
+
+El Zen de Python\footnote{The Zen of Python: \url{http://www.thezenofpython.com/}} es una colección de 19 principios de software que influyen en el diseño del lenguaje de programación Python. Fueron escritos por Tim Peters en 1999.
+
+\begin{enumerate}
+	\item Lindo es mejor que feo.
+	\item Explícito es mejor que implícito.
+	\item Simple es mejor que complejo.
+	\item Complejo es mejor que complicado.
+	\item Plano es mejor que anidado.
+	\item Espaciado es mejor que denso.
+	\item La legibilidad es importante.
+	\item Los casos especiales no son lo suficientemente especiales como para romper las reglas.
+	\item Sin embargo la practicidad le gana a la pureza.
+	\item Los errores nunca deberían pasar silenciosamente.
+	\item A menos que se silencien explícitamente.
+	\item Frente a la ambigüedad, evitar la tentación de adivinar.
+	\item Debería haber una, y solamente una, manera obvia de hacerlo.
+	\item A pesar de que no sea obvio.
+	\item Ahora es mejor que nunca.
+	\item A pesar de que nunca es muchas veces mejor que justo ahora.
+	\item Si la implementación es dificil de explicar, es una mala idea.
+	\item Si la implementación es fácil de explicar, quizás sea una buena idea.
+	\item Los namespaces son una gran idea, ¡tengamos más de esos!
+\end{enumerate}
+

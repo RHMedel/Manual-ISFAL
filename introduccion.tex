@@ -1,0 +1,169 @@
+\chapter{Introducción al software libre}
+\label{capIntro}
+%\chapterauthor{Fernandez Manolo, Fiora Máximo, Garelli Mayco, Luna Carlos, Meichtri Fernando, Sanchez Mauricio}
+
+
+En este capítulo hacemos una revisión ligera de los principales hitos históricos del software libre, para lo cual necesitamos presentar algunos conceptos técnicos y legales, tales como la definición de software libre, las licencias de software o los sistemas operativos. Aquí algunos de estos conceptos son abordados someramente, pero volveremos sobre ellos con más detalles en los siguientes capítulos.
+
+\section{Historia del software libre}
+
+Si bien la historia del software libre es relativamente corta, sus principales eventos, sus protagonistas y, especialmente, sus efectos en la informática tal como la conocemos son abundantes, interesantes y muy ricos desde el punto de vista histórico. Gran cantidad de artículos, libros y hasta películas\footnote{\emph{Revolution OS} es una película de 85 minutos sobre la historia del software libre desde sus comienzos hasta 2001. \url{http://revolution-os.com/}} sobre este tema han sido realizados. En esta sección nos proponemos realizar apenas una aproximación a su historia, proveyendo abundante bibliografía para que el o la lectora interesada pueda profundizar a su gusto.
+
+Desde que en los años `50 la creciente miniaturización de los componentes electrónicos permitió la comercialización de computadoras y hasta comienzos de los años `70, aproximadamente, la mayoría de las compañías que producían computadoras digitales o periféricos tenían el hábito de dejar a disposición de los usuarios el código fuente (archivos legibles) de su software. Si algún usuario o grupo de usuarios realizaba mejoras a ese software, estas mejoras eran compartidas en las comunidades de usuarios de dichas computadoras e incluso las empresas adoptaban estas mejoras. Esto se debía principalmente a que las comunidades de usuarios eran pequeñas, ya que los costos tanto de las computadoras como de la infraestructura y mano de obra requerida para operar eran prohibitivos y por lo tanto se vendían apenas unas decenas de cada modelo, y también a que el software funcionaba solamente en el hardware para el que había sido escrito.
+
+A comienzos de los `70 los avances de la década anterior en el desarrollo de sistemas operativos y compiladores permitieron el nacimiento de la industria del software como un fenómeno separado del hardware. De esta forma, el código fuente pasó a tener un valor comercial que antes no tenía y comenzaron las tensiones entre quienes comercializaban software y quienes lo consideraban una herramienta que debería estar al alcance de todos para su mayor desarrollo. Dos anécdotas, separadas casi por una década, marcaron esa tensión y una de ellas generaría un importante cambio en la cultura del desarrollo de software.
+
+En febrero de 1976 Bill Gates, apenas meses después de fundar la empresa Microsoft, publicó una ``Carta abierta a los aficionados''\footnote{``Open Letter to Hobbyists'', por su título original en inglés~\cite{gates76}.}, en la que consideraba que lo que los aficionados al desarrollo de software llamaban \emph{compartir} era en realidad, y en sus palabras, \emph{robar} y eso impedía el desarrollo profesional de software. 
+
+A principios de la década del `80 Richard Stallman, mientras trabajaba en el Laboratorio de Inteligencia Artificial del Instituto Tecnológico de Massachusetts (MIT), quiso hacer unas modificaciones al software de una impresora Xerox y se encontró con que el código fuente no estaba disponible y aquellos investigadores que sí tenían acceso a dicho código habían firmado acuerdos de no revelarlo\footnote{NDA, Non-Disclosure Agreement, en inglés.}. Este fue uno de los incidentes\footnote{Otro posible evento fue el desacuerdo entre Stallman y Symbolics, Inc. sobre el acceso a las actualizaciones que Symbolics había realizado a su máquina Lisp, la cual estaba basada en código de libre acceso realizado por el MIT.} que llevaron a Richard Stallman a dedicar su vida a la creación del movimiento del software libre~\cite{williams02}, comenzando entre 1983 y 1985 con el proyecto GNU\footnote{\url{https://www.gnu.org/}} para el desarrollo de un sistema operativo similar al entonces famoso Unix\footnote{GNU's Not Unix, es un acrónimo recursivo que significa ``GNU No es Unix''}, la publicación de ``El manifiesto de GNU''\footnote{\url{https://www.gnu.org/gnu/manifesto.es.html}} y la creación de la Fundación Software Libre\footnote{FSF, Free Software Foundation en inglés. \url{https://www.fsf.org/}}.
+
+En la sección siguiente daremos una definición más precisa del Software Libre, pero por ahora será suficiente indicar que es aquel software que permite a los y las usuarias utilizarlo, modificarlo y distribuirlo sin restricciones.
+
+Desde medidados de los años `80 el software libre y el movimiento sociopolítico que lo rodea no han parado de crecer. Sin embargo, a comienzos de los `90 el proyecto GNU había desarrollado muchas de las herramientas informáticas requeridas para un sistema operativo (editores de texto, compiladores, etc.) pero no tenía un componente clave: el núcleo (o \emph{kernel}, en inglés). Fue en 1991 que, paralelamente al proyecto GNU y aprovechando la posibilidad de realizar desarrollo distribuido gracias a la creciente difusión de la Internet, un estudiante finlandés, Linus Torvalds, comenzó el desarrollo de un núcleo libre, con características similares a Unix, el cual se llamaría Linux. Esta pieza vino a completar todos los componentes requeridos para tener un sistema operativo libre, conocido como GNU/Linux.
+
+Aproximadamente para la misma época, en 1994, se lanzaba la versión totalmente libre del sistema operativo BSD\footnote{BSD por \emph{Berkeley Software Distribution}.}, también derivado de Unix. Este sistema y sus diferentes versiones han tenido cierto éxito, pero no puede compararse con la amplia difusión de las versiones de GNU/Linux, llamadas \emph{distribuciones} o \emph{distros}.
+
+Hacia fines de la década de los `90 el movimiento de software libre había crecido, especialmente impulsado por la Internet, la cual permite a los y las desarrolladoras de software trabajar en forma distribuida desde prácticamente cualquier lugar del mundo y, asimismo, distribuir el software sin los costos asociados a los canales de comercialización tradicionales. Sin embargo, poco impacto se había logrado en el mundo de los negocios y las grandes empresas, y varias personas mostraron su disconformidad con las fuertes posiciones políticas de Richard Stallman. Fue así que en 1998, Bruce Perens, Eric S. Raymond y  Jon ``Maddog'' Hall, entre otras personas, crearon la Iniciativa de Fuentes Abiertas (OSI, por sus siglas en inglés\footnote{\emph{Open Source Initiative}, \url{https://opensource.org/}}). Su motivación es menos política y más pragmática, haciendo hincapié en las ventajas técnicas y económicas del software que pone el código fuente a disposición de todos los y las usuarias.
+
+El mismo año de creación de la OSI, el navegador de internet Netscape, que unos años antes había sido el de mayor penetración de mercado (hasta 90\%), liberó su código como respuesta a la agresiva campaña de Microsoft para imponer su navegador Internet Explorer. La creación de la OSI y la liberación del código de Netscape tuvieron un significativo impacto comercial y durante el resto de la década, y hasta la explosión de la así llamada \emph{burbuja puntocom}, fueron muchas las compañías basadas en software libre o software de fuentes abiertas que comenzaron a cotizar en bolsa con valuaciones millonarias.
+
+En los últimos años, la difusión del software libre ha sido muy importante, excepto en las computadoras personales (ya sea de escritorio o portátiles) donde el sistema operativo mayoritario sigue siendo alguna versión de MS Windows. Donde el software libre es más fuerte es en los servidores que prestan servicios a través de Internet. Allí, el \textit{stack} de software está generalmente constituido por diferentes distribuciones de GNU/Linux y servidores web libres, tales como Nginx o Apache. Así mismo, desde el año 2017 todas las supercomputadoras en el top500, el ranking de las computadoras más veloces del mundo, creado en 1995, corren bajo alguna versión de Linux.
+
+% algo sobre las startups con web apps basadas en software libre.
+En la actualidad, el software libre permite la creación rápida de \textit{start ups} tecnológicas, ya que reduce los costos iniciales de desarrollo de las herramientas de software necesarias (evitando tanto el autodesarrollo como el pago de licencias por software privativo durante las etapas iniciales del negocio) y permite la adaptación a los requisitos particulares del nuevo emprendimiento~\cite{kamau16, singh21, gerasimenko16, wiggers21}. 
+
+Completamos esta suerte de historia general del software libre y de fuentes abiertas con dos hitos anecdóticos que marcan sendos momentos en que el éxito en la difusión del software libre fue remarcado (en formas totalmente diferentes) por expresiones públicas de representantes de la empresa que supo encarnar todo lo opuesto al software libre, Microsoft. 
+
+\begin{itemize}
+\item En junio de 2001 el por entonces gerente general de Microsoft, Steve Ballmer, dijo en un reportaje que ``Linux es un cancer que contagia, en el sentido de propiedad intelectual, a todo lo que toca.''\footnote{La cita original es ``Linux is a cancer that attaches itself in an intellectual property sense to everything it touches.'' La entrevista original ya no está disponible en el sitio del Chicago Sun-Times, pero un análisis (en inglés) de la noticia aún puede leerse en The Register\cite{theregister01}.}
+
+\item En una charla durante un evento en octubre de 2014 el por entonces nuevo gerente general de Microsoft, Satya Nadella, presentó la nueva posición de la empresa ante el software libre, resumiéndola con una filmina que decía ``Microsoft $\varheartsuit$ Linux''.\footnote{Grabación de la charla de Nadella: \url{https://youtu.be/54hHr8ye2kE}}
+
+\end{itemize}
+
+
+%\section{Conceptos del Software Libre y de Fuentes Abiertas}
+%\sectionmark{Conceptos}
+
+\mysection{Conceptos del software libre y de fuentes abiertas}{Conceptos}
+
+Comenzamos formalizando la definición de {\it Software Libre} tal como la estableció Richard Stallman como parte del proyecto GNU: aquel software cuyos términos de uso (su licencia) le aseguran a los y las usuarias las siguiente cuatro libertades esenciales.
+
+\begin{enumerate}
+\setcounter{enumi}{-1}
+\item La libertad de utilizar el software con cualquier propósito.
+\item La libertad de estudiar el programa y modificarlo para adaptarlo a las propias necesidades.
+\item La libertad de distribuir copias del programa.
+\item La libertad de distribuir copias de las versiones modificadas del programa.
+\end{enumerate}
+
+Cabe destacar que las libertades 1 y 3 requieren de acceso al \emph{código fuente}, es decir, los archivos conteniendo el software en un formato legible por un ser humano (y por un compilador o intérprete). Por lo que se puede considerar que una característica fundamental del Software Libre es que sea de \emph{Fuentes Abiertas}\footnote{\emph{Open Source}, en inglés.}. 
+
+Como dijimos previamente, la creación en 1998 de la \emph{Open Source Initiative} tenía como objetivo hacer más amigable al software libre con el ámbito de los negocios. Además de cambiar el confuso (en inglés) nombre de Software Libre al más neutro Fuentes Abiertas, se estableció una definición alternativa, aunque conceptualmente similar. Para la OSI, un software es de Fuentes Abiertas si cumple con los siguientes 10 criterios.
+
+\begin{enumerate}
+\item {\bf Redistribución libre}: La licencia no restringirá el derecho de vender o regalar el software como parte de un paquete de software. No se podrá requerir el pago de tasas por las ventas.
+
+\item {\bf Código fuente}: El programa debe incluir el código fuente y debe permitir la distribución de dicho código y de su forma compilada. Si el producto no se distribuye con el código fuente, debe haber una forma clara de obtenerlo por no más que un costo razonable de reproducción, preferentemente descargándolo de la Internet en forma gratuita. El código fuente debe ser la forma preferida en que un/a programador/a modifique el programa. Código ofuscado deliberadamente no es aceptable. Formas intermedias, como el resultado de un preprocesador o un traductor no son permitidas.
+
+\item {\bf Trabajos derivados}: La licencia debe permitir modificaciones y trabajos derivados, y permitir que sean distribudos bajo los mismos términos que la licencia del software original.
+
+\item {\bf Integridad del código fuente del/la autor/a}: La licencia puede restringir la distribución de modificaciones del código fuente solo si permite la distribución de "parches" con el código fuente que modifiquen el programa al momento de construcción (\emph{build}) La licencia debe permitir explícitamente la distribución del software construido a partir del código modificado. La licencia puede requerir que los trabajos derivados tengan un nombre o número de versión diferentes del software original.
+
+\item {\bf No discriminación contra personas o grupos}: La licencia no debe discriminar a ninguna persona o grupo de personas.
+
+\item {\bf No discriminación contra actividades}: La licencia no debe restringir a nadie de hacer uso del programa en una actividad específica. 
+
+\item {\bf Distribución de licencia}: Los derechos vinculados a un programa deben aplicarse a todas las partes a las que les es redistribuido sin la necesidad de licencias adicionales para dichas partes.
+
+\item {\bf La licencia no debe ser específica para un producto}: Los derechos vinculados a un programa no deben depender de que tal programa sea parte de una distribución particular de software. Si el programa es extraído de dicha distribución y utilizado o distribuido respetando los términos de su licencia, todas las partes a quienes el programa es redistribuido deben tener los mismos derechos que han sido otorgados en conjunto con la distribución original.
+
+\item {\bf La licencia no debe restringir otro software}: La licencia no debe establecer restricciones sobre otro software que sea distribuido junto con el software sobre el cual se aplica dicha licencia. 
+
+\item {\bf La licencia debe ser tecnológicamente neutral}: Ninguna parte de la licencia debe basarse en una tecnología o estilo de interfaz específicos.
+
+\end{enumerate}
+
+Aunque las definiciones en principio lucen muy diferentes, realmente no establecen un concepto diferente para el software libre o de fuentes abiertas. La principal diferencia entre la Free Software Foundation, promotora del término y definición del software libre, y la Open Source Inititative, promotora del software de fuentes abiertas, está en sus motivaciones fundamentales.
+
+La FSF argumenta que el software es conocimiento y debe poderse difundir sin trabas. Ocultar el conocimiento es una actitud antisocial y moralmente reprensible. Además, la posibilidad de estudiar y modificar programas es una forma de libertad de expresión.
+
+Por su parte la OSI tiene una motivación más pragmática, argumentando que el software de fuentes abiertas tiene ventajas técnicas y económicas que solo se logran compartiendo el código fuente.
+
+En ese aspecto, existe alguna confusión respecto a que el software libre es igual a software gratuito. En principio, como se mencionó arriba, la primera confusión viene del término \emph{free software}, ya que \emph{free} en inglés significa tanto ``libre'' como ``gratuito''\footnote{Nótese que en español a veces también se utilizan ambos términos en forma similar, por ejemplo, cuando se indica que en una fiesta hay ``barra libre''.}. Es por eso que, jocosamente, Richard Stallman aclara que el software es \emph{free as in Freedom, not as in free beer}\footnote{El software es libre como en libertad, no como en cervezas gratis.}.
+
+Por otro lado, es cierto que en general se puede acceder al software libre en forma gratuita, ya que al requerirse el acceso al código fuente y su posibilidad de distribuirlo (por las libertades 1 y 3), el costo del software, o mejor dicho de su código binario, tiende a cero: la empresa o comunidad desarrolladora lo puede vender pero sus primeros clientes lo pueden distribuir en forma legal (ya sea por menor costo o gratuitamente), por lo que los clientes siguientes no tendrán la necesidad de adquirirlo al precio establecido por sus desarrolladores. Como veremos más adelante, esto no impide que se puedan hacer negocios basados en software libre. Simplemente, no tiene sentido cobrar por utilizarlo, tal cual es el modelo de negocios tradicional en la industria del software.
+
+Por completitud mencionaremos el \emph{freeware} o \emph{shareware} que, aunque ya no sean tan comunes esos términos, definen a software que es gratuito o que se comparte gratuitamente. en algunos casos con funciones reducidas (se de pagar para acceder a más funciones) y otros con la posibilidad de realizar pagos voluntarios a sus autores. La principal diferencia con software libre es que este tipo de software puede no ofrecer algunas de las libertades requeridas para ser definido como tal. Generalmente no se permite ni el acceso al código fuente, ni su modificación, ni la distribución de dichas modificaciones.
+
+%
+%\section{Leyes que favorecieron al software libre}
+%
+%{\bf Ley aprobada en la región de Piamonte Italia}
+%\\
+%\\
+%En 2010 el Consejo Regional de Piamonte, una región nordoccidental de Italia, que limita con Suiza al norte y con Francia al oeste, aprobaba una Ley, que establecía que se favorecerá a los programas pertenecientes a la categoría del software libre y a los programas en los que el código es inspeccionable por el licenciatario.
+
+%La elección fue acogida con entusiasmo por los partidarios del Software Libre y una gran parte de la sociedad civil, mientras que la Presidencia del Consejo de Ministros impugnaba esta norma, pidiendo al Tribunal Constitucional que la declarara ilegal. Pero el Tribunal a cargo del juicio dictaminó que la preferencia por el software Libre es legal y respeta el principio de la libre competencia.
+
+%Como veredicto determinaron que, preferir Software Libre no infringe la libertad de competencia, ya que la libertad del software es una característica jurídica de carácter general y no una característica tecnológica ligada a un producto o marca específica. Esta sentencia expuso la inconsistencia de los argumentos que, durante mucho tiempo, se han opuesto a la adopción de normas que favorezcan la utilización de Software Libre argumentando que están en conflicto con el principio de "neutralidad tecnológica".
+
+
+%\section{El Software Libre en Latinoamérica y el Caribe}
+%\sectionmark{El software libre en Latinoamérica} 
+
+\mysection{El software libre en Latinoamérica y el Caribe}{El software libre en LAC}
+
+Latinoamérica y el Caribe son regiones consumidoras de tecnología, ya sea importada de otras partes del mundo o producida localmente por sucursales de compañías extranjeras. A partir de los procesos de privatización y desregularización de las telecomunicaciones llevados adelante en los años '80 y '90, los servicios también están dominados por gigantes globales. La mayoría del software propietario líder en el mercado ha sido traducido a español y portugués en busca de un mercado creciente.
+
+El software libre, si bien no con la fuerza que tiene en países centrales, también tiene su cuota de desarrollo en esta región. Mencionaremos algunos hitos y organizaciones que así lo muestran. No incluimos en este somero listado las diferentes organizaciones y eventos que surgieron a lo largo del tiempo y luego desaparecieron o se discontinuaron, ya que eso queda para un relevamiento histórico más completo.
+
+El programador brasileño Marcelo Tosatti desde noviembre de 2001, cuando tenía solo 18 años, se convirtió en el mantenedor y co-mantenedor de ciertas versiones del kernel Linux. 
+
+El software de escritorio Gnome fue iniciado por los programadores mexicanos Miguel de Icaza y Federico Mena, forma parte oficial del proyecto GNU y es uno de los escritorios más utilizados por distribuciones GNU/Linux.
+
+El evento FLISoL (Festival Latinoamericano de Instalación de Software Libre)\footnote{\url{https://flisol.info/}} se realiza desde el año 2005 simultáneamente en diferentes ciudades de países latinoamericanos. Comenzó como un encuentro presencial para instalar distribuciones de sistemas operativos en computadoras que los usuarios acercaran al evento, pero actualmente es un evento que incluye otras actividades, como charlas, talleres, presentaciones y ferias.
+
+El Proyecto Software Libre de Brasil (\emph{Software Livre Brasil} en portugués) es una red de personas e instituciones creada a principios de los años 2000 con el objetivo de promover el uso y desarrollo de software libre como una alternativa de libertad económica, tecnológica y de expresión en ese país\footnote{\url{http://softwarelivre.org/portal/quem-somos}}. En su momento de mayor auge pudo promover el desarrollo y uso de software libre en los gobiernos de varios estados de Brasil y del gobierno federal, así como la organización del Foro Internacional de Software Libre, que durante 18 años se llevó a cabo en Porto Alegre.
+
+
+%{\bf Caso Android. ¿ Android es Software Libre?}
+%\\
+%\\
+%Android. Android es un \emph{software de código abierto} que se distribuye bajo la licencia Apache V2.
+%\\
+%La licencia Apache V2 da permiso para:
+%\\
+%Utilizar el software para cualquier propósito, distribuirlo, modificarlo y distribuir las modificaciones
+%no tiene copyleft por lo que las versiones modificadas no tienen que ser distribuidas como software libre.
+%Compatible con GPL3 pero no con las anteriores.
+%Incluye provisiones de protección respecto a patente.
+%\\
+%Android es un software de código abierto con  acceso al código fuente del mismo, pero terceras partes, como por ejemplo fabricantes, pueden modificarlo o añadir código y este no tiene porqué ser liberado. 
+%\\
+%Leer mas en: https://www.androidsis.com/android-es-software-libre-estamos-en-lo-cierto/
+
+%\section{Conclusion}
+%	
+%Gracias a la cultura de compartir el conocimiento (El software) la industria al dia de hoy se vio afectada favorablemente, derivando en importantes desarrollos como lo fueron Unix, BSD, TCP/IP, etc.
+%Cuando las empresas en su afán de consolidar su posición en el mercado, entendieron que el software era un activo valioso decidieron que esta no debía ser compartido tan a la ligera, dando lugar a las NDA y al software privativo.
+%\\
+%En este movimiento se han cometido muchos abusos, hasta patentar y registrar cosas triviales que permiten a las empresas demandar a otras por un Doble Click, ¡literalmente! (Registro de Microsoft).
+%\\
+%Ya hace tiempo, las empresas también entendieron  que no solo el software es un activo importantes, sino, aún más valioso son los datos generados por estos. Dando lugar a una proliferación de software gratuito o de código abierto con el objetivo de obtener datos de lo más variado y estos ser usados con fines estratégicos y/o comerciales.
+%\\
+%Cuando no tenemos el código fuente no es posible saber como este esta hecho, tampoco como este funciona, ya que no es transparente. 
+%Solo si sabemos como funciona el software podemos hablar de transparencia y solo cuando tenemos acceso a modificar el funcionamiento del software estamos habilitados a dejar ser simples consumidores.
+%\\
+%La distinción crucial del software es justamente ésta: el acceso a poder entender cómo funciona y poder modificarlo. 
+%\\
+%Como usuarios debemos entender cómo estas empresas actúan, aceptando o rechazando sus prácticas.
+%\\
+%Otra observación sobre las grandes corporaciones y su software privativo es el empoderamiento a través de estrategias destinadas a copar el mercado con sus producto y estableciendolos como protocolos defactos.
+%El usuario domestico solo es una arista menor, siendo su principal interes las empresas que deberan adaptarse a las tecnologias dispuesta en el mercado, que mediane la renovación constante de licencias y actulizaciones generan la depencia buscada.
+%\\
+%Si todos usan una misma tecnologia, esta se vuelve el standar, provocando un efecto contagio.
+%\\
+%\emph{El software una vez creado, es facil de copiar, no puede ser escaso, por lo que su precio deberia tender a 0}, la unica manera de hacer que la demanda se mantenga, es mediante la creacion de restricciones artificiales sobre el software, como por ejemplo: Licencias de uso por tiempo determinado.
+%
+%
