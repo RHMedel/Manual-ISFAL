@@ -3,6 +3,57 @@
 
 Tanto el software libre como su filosofía de trabajo comunitario, de compartir libremente la información y de aportes voluntarios han tenido impacto en otros ámbitos por fuera del desarrollo de software.
 
+\section{Producción de bienes artísticos}
+
+Existe un movimiento dedicado a la creación artística colaborativa, con obras que puedan ser compartidas y modificadas por cualquier persona. Estos/as creadores/as de obras de arte, en particular las digitales, ya sean gráficos, libros, documentos, imágenes, etc., quieren asegurar que sus obras se compartan y utilicen en distintos ámbitos, pero que no sean apropiadas por empresas para generar ganancias sin compartirlas con la comunidad. Para esto se han creado diferentes licencias que aseguran el respeto por los derechos de autor mientras permiten la generación de obras derivadas. 
+
+De particular éxito en el ámbito de obras artísticas ha sido la familia de licencias de Creative Commons\footnote{Creative Commons: \url{https://creativecommons.org/}}, la cual es una organización sin fines de lucro dedicada a promover el acceso y el intercambio de cultura. Ha desarrollado un conjunto de instrumentos jurídicos de carácter gratuito que facilitan usar y compartir tanto la creatividad como el conocimiento.
+
+Con estos instrumentos el/la autor/a de una obra puede, de una manera simple y estandarizada, otorgar permisos para compartir y usar su trabajo creativo bajo los términos y condiciones de su elección. Las licencias Creative Commons están compuestas por cuatro módulos de condiciones, los cuales al ser seleccionados permiten otrogar diferentes tipos de permisos a los/as usuarios/as:
+
+\begin{itemize}
+\item Atribución o \emph{Attribution} (BY): requiere que en cualquier explotación de la obra será necesario reconocer al/la autor/a explícitamente.
+
+\item No comercial o \emph{Non Commercial} (NC): la explotación de la obra queda limitada a usos no comerciales. Es decir, no se puede utilizar la obra para ganar dinero.
+
+\item Sin obras derivadas o \emph{No Derivate Works} (ND): la autorización para explotar la obra no incluye la posibilidad de crear una obra derivada. Se puede utilizar y comercializar (si así lo permite la licencia) pero solamente la obra tal como fue creada por su autor/a, sin modificaciones.
+
+\item Compartir igual o \emph{Share Alike} (SA): la explotación autorizada incluye la creación de obras derivadas siempre que mantengan la misma licencia al ser distribuidas.
+\end{itemize}
+
+Con estas condiciones se pueden generar distintas combinaciones que producen las licencias Creative Commons:
+
+\begin{itemize}
+\item Atribución (BY): Se permite cualquier explotación de la obra, incluyendo la explotación con fines comerciales y la creación de obras derivadas, la distribución de las cuales también está permitida sin ninguna restricción. Esta licencia es una licencia libre.
+
+\item Reconocimiento – Compartir Igual (BY-SA): Se permite el uso comercial de la obra y de las posibles obras derivadas, la distribución de las cuales se debe hacer con una licencia igual a la que regula la obra original. Esta licencia es una licencia libre.
+
+\item Atribución – No Comercial (BY-NC): Se permite la generación de obras derivadas siempre que no se haga con fines comerciales y citando al/la autor/a original. Tampoco se puede utilizar la obra original con fines comerciales. Esta licencia no es una licencia libre.
+
+\item Atribución – No Comercial – Compartir Igual (BY-NC-SA): No se permite un uso comercial de la obra original ni de las posibles obras derivadas, la distribución de las cuales se debe hacer con una licencia igual a la que regula la obra original. Esta licencia no es una licencia libre.
+
+\item Atribución – Sin Obras Derivadas (BY-ND): Se permite el uso comercial de la obra, citando al/la autor/a, pero no la generación de obras derivadas. Esta licencia no es una licencia libre.
+
+\item Atribución – No Comercial – Sin Obras Derivadas (BY-NC-ND): No se permite un uso comercial de la obra original ni la generación de obras derivadas. Esta licencia no es una licencia libre, y es la más cercana al derecho de autor tradicional.
+
+\end{itemize}
+
+
+Otras licencias libres también pueden utilizarse para libros, en particular para la documentación de los proyectos de software:
+
+\begin{itemize}
+
+\item {\bf Licencia de documentación libre de GNU o GFDL}: es una licencia libre robusta para documentos diseñada por la FSF GNU. Permite asegurar que el material esté disponible de forma completamente libre, pudiendo ser copiado, redistribuido, modificado e incluso vendido siempre y cuando el material se mantenga bajo los términos de esta misma licencia. 
+
+\item {\bf FreeBSD Documentation License}: es una licencia de documentación libre permisiva, creada para su uso con el sistema operativo FreeBSD, incompatible con la GFDL.
+
+\item {\bf Apple's Common Documentation License}: es una licencia de documentación libre, incompatible con la GFDL, puesto que la sección (2c) indica ``No agregue otros términos ni condiciones a esta licencia'' y, además, la GFDL posee cláusulas adicionales que no están contempladas en la Common Documentation License.
+
+\item {\bf Open Publication License}: es una licencia libre robusta que se utiliza para documentación, siempre y cuando el titular del copyright no ejerza ninguna de las ``OPCIONES DE LA LICENCIA'' que se mencionan en la sección VI. Pero si se invoca cualquiera de esas opciones, la licencia se vuelve privativa. En cualquier caso, es incompatible con la GFDL.
+    
+\end{itemize}
+
+
 \section{Software libre en el Estado}
 
 El software libre impacta de varias maneras en las administraciones públicas: permite un mejor aprovechamiento de recursos, fomenta la industria local, ofrece independencia de proveedores monopólicos, permite el escrutinio público y garantiza el acceso a los datos a largo plazo.
@@ -91,6 +142,20 @@ Es claro entonces que la adquisición de software por parte del Estado debiera e
 %Venezuela
 %Argentina (rechazada)
 
+\subsection{Voto Electrónico}
+
+Una discusión que recurrentemente se presenta en el discurso público es el voto electrónico como mejora al sistema actual de elecciones de autoridades~\cite{lanacion17, serra17}. Lo incluimos en esta sección por dos motivos: el licenciamiento libre ha sido presentado como una característica necesaria del software de voto electrónico y las votaciones para elegir gobiernos son, aunque no las únicas elecciones de las que los ciudadanos participamos (piénsese en un club o un colegio profesional), son, sin duda, las más importantes para nuestra vida social.
+
+La primera consideración sobre el voto electrónico es que debe cumplir los requerimientos de toda elección democrática: el voto debe ser secreto, debe registrarse la intención del/la votante, solo los y las electoras autorizadas pueden votar y cada elector/a debe emitir solamente un único voto (incluyendo la opción de votar en blanco). 
+
+Un requisito usual es que cualquier ciudadano/a pueda auditar el proceso. Esto hace improbable que cualquier código privativo, con su habitual calidad de secreto comercial, pueda ser utilizado en una elección transparente. Por eso muchas veces se apela a la necesidad de que el software utilizado para las votaciones sea de código abierto.
+
+En el mundo solo unos pocos países o regiones utilizan voto electrónico, debido a la dificultad de demostrar que cumplen con los requisitos indicados anteriormente de forma clara y transparente~\cite{smaldone16}. Los países utilizando voto electrónico son Venezuela, Brasil e India. Mientras que se utiliza en algunas jurisdicciones de Estados Unidos, Perú, Argentina, Francia, Japón y Somalía. En nuestro país se utiliza en Salta, Ciudad Autónoma de Buenos Aires y parcialmente Córdoba~\cite{origlia16} para elecciones locales, pero su uso a nivel nacional fue descartado luego del debate en el Senado de la fallida ley de reforma electoral impulsado por el Gobierno Nacional, que tenía ya la media sanción de la Cámara de Diputados~\cite{ybarra16}
+
+Respecto de países donde se dejó de utilizar el voto electrónico, en Alemania la Corte Suprema declaró en 2009 a los sistemas de voto electrónico como inconstitucionales (por que no podían ser auditados por un ciudadano común), en Holanda dejaron de utilizarse en 2007 al comprobarse que los votos podían ser leídos a varios metros de distancia (en algunas máquinas) y que los programas podían ser alterados, mientras que en Irlanda se evaluó un sistema en elecciones piloto (entre 2002 y 2004, con un costo estimado de 54 millones de euros) y se determinó que no se podía garantizar la integridad de ninguna elección que usara ese sistema, que fue dado de baja definitivamente en 2009.
+
+Dos interesantes fuentes de información sobre voto electrónico, desde la posición opuesta a él, son los dos libros editados por la Fundación Vía Libre\footnote{Fundación Vía Libre: \url{https://www.vialibre.org.ar}}: ``Voto electrónico: los riesgos de una ilusión''~\cite{busaniche08} y ``Voto electrónico: una solución en busca de problemas''~\cite{busaniche17}.
+
 \section{Software libre en la educación}
 
 Analizaremos los distintos aspectos relacionados con el uso de software en la educación de ciudadanos/as. Desarrollaremos dicho análisis desde tres enfoques diferentes: el económico, el académico y el ético.
@@ -140,123 +205,39 @@ Un ejemplo de software libre utilizado por una decisión institucional en nuestr
 
 \subsection{Recursos Educativos Abiertos}
 
-El portal educ.ar: Dispone de diferentes materiales desarrollados a partir de software libre: desde juegos hasta un CD de la Colección educ.ar, con actividades específicas, como por ejemplo contenidos pensados para introducir a los docentes en el mundo del software libre: sus postulados ideológicos, teóricos, técnicos y metodológicos, acompañados por sugerencias de trabajo con programas, herramientas y modelos de esta nueva modalidad de producción, construcción y difusión de los contenidos.
+Una derivación de la filosofía del software libre en la educación es la generación y uso de Recursos Educativos Abiertos (REA), esto es, material educativo creado por investigadores/as, pedagogos/as, docentes y estudiantes que se distribuye con licencias libres, lo cual permite utilizarlo en cualquier institución educativa sin tener que pagar, pero también modificarlo para adaptarlo a las necesidades de cada curso en particular. 
+
+En Argentina, tanto el portal Educ.ar\footnote{Educ.ar: \url{https://www.educ.ar/}} como el del Programa Conectar Igualdad proveen materiales didácticos, muchos de los cuales son abiertos y desarrollados en las diferentes jurisdicciones educativas del país y compartidos con el resto del sistema educativo. En el caso del PCI todos los contenidos están bajo la licencia Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0)\footnote{Licencia CC BY-NC-SA 4.0: \url{https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES}}, excepto cuando se declare lo contrario\footnote{Condiciones de uso de los contenidos del sitio Conectar Igualdad, artículo 6.1. USO DE LOS CONTENIDOS: \url{https://conectarigualdad.edu.ar/condiciones}}.
 
 
 \section{Software libre en organizaciones sociales}
-Hay muchas razones, por sus principios filosóficos por razones jurídicas, sociales y socieconómicas, funcionalidad, accesibilidad y seguridad. Para las organizaciones y movimientos sociales de América Latina y del mundo, el software libre puede ser incorporado como herramienta tecnológica y, por qué no, también como herramienta de liberación.\\
-{\bf Por sus principios filosóficos:}
+
+Las organizaciones y movimientos sociales tienen mucho en común, dados sus principios filosóficos, jurídicos, sociales y económicos, con el movimiento del software libre. De esta manera el software libre puede ser incorporado como herramienta tecnológica en estas organizaciones sin traicionar a sus principios.
 
 \begin{itemize}
-\item Considera la libertad y la solidaridad como principios éticos fundamentales.
-\item Considera el conocimiento como un bien público que beneficia a la colectividad en general y permite el desarrollo igualitario.
-\item El software es conocimiento y debe difundirse sin trabas.
-\item Coloca el beneficio de la humanidad por encima de cualquier cosa.
+
+\item {\bf Principios filosóficos}
+
+Ambos consideran a la libertad y la solidaridad como principios éticos fundamentales, y colocan al beneficio de la humanidad por sobre todo otro interés. En particular, consieran al conocimiento como un bien público que beneficia a la colectividad en general y permite el desarrollo igualitario, por lo que el software, en tanto conocimiento codificado, debe difundirse sin trabas.
+
+\item {\bf Razones jurídicas}
+
+Evita los problemas de uso ilegal de licencias de software privativo y sus posibles implicaciones legales (demandas, multas, entre otros).
+
+\item {\bf Razones socioeconómicas}
+
+Estos movimientos promueven la economía solidaria y el comercio justo, especialmente la que se desarrolla en términos cooperativos y participativos, considerando a las personas usuarias como sujetos de derechos, no solo consumidores de productos.
+
+Usualmente estas organizaciones no cuentan con muchos recursos económicos y se necesita destinar los que tiene para el logro de su misión y objetivos centrales, por lo que las licencias de software libre permiten acceder a tecnología que de otra forma les estaría vedada.
+
+Finalmente, el software libre es amigable con el ambiente, una preocupación central de estos movimientos sociales, al no requerir de la sustitución tan frecuente de los equipos, reduciendo así la producción de basura tecnológica.
+
+\item {\bf Accesibilidad y seguridad:}
+
+La accesibilidad, otro tema recurrente en estos movimientos, puede ser garantizada al permitir el software libre su adaptación a personas, contextos e idiomas.
+
+El software libre mejora la seguridad al permitir la corrección de fallas y problemas de forma oportuna  y según las necesidades de los/as usuarios/as. En particular, mucha de la información que manejan las organizaciones de la sociedad civil suele ser considerada ``confidencial'' y necesita ser resguardada. El software libre permite asegurar que la información no es compartida con otras instituciones o personas.
+
 \end{itemize}
 
-Por razones jurídicas:
-\begin{itemize}
-\item Es legal compartir y regalar software libre a otras personas.
-\item Evita los problemas de uso ilegal de licencias de software propietario/privativo y sus posibles implicaciones legales (demandas, multas, entre otros).
-\end{itemize}
 
-{\bf Por razones sociales y socioeconómicas:}
-\begin{itemize}
-\item Promueve la economía solidaria y el comercio justo.
-\item Contempla a las personas usuarias como sujetos de derechos no como consumidores de productos.
-\item Se desarrolla en términos colaborativos y participativos.
-\item Las organizaciones no cuentan con muchos recursos económicos y se necesita destinar los que tiene para el logro de su misión y objetivos.
-\item  Las licencias del software propietario/privativo son muy caras para las organizaciones sociales (costo de pagar licencias para cada computadora y programas 
-especializados).
-\item En la mayoría de los casos, las organizaciones no podrían costear las multas impuestas judicialmente como resultado de demandas legales por el uso ilegal de 
-licencias de software privativo.
-\item Se podría decir que el software libre es amigable con el ambiente, al no requerir de la sustitución tan rápidamente de equipo, se produce menos basura tecnológica.
-\end{itemize}
-
-{\bf Funcionalidad, accesibilidad y seguridad:}
-\begin{itemize}
-\item El software libre garantiza la seguridad que implica corrección de problemas de forma oportuna; en el movimiento de software libre hay equipos humanos trabajando para corregir los problemas de seguridad, adaptado a las personas, contextos e idioma.
-\item   Mucha de la información que manejan las organizaciones de la sociedad civil es
-información “delicada” que necesita ser resguardada, el software libre también ofrece herramientas para asegurar la información.
-\end{itemize}
-
-\section{Voto Electrónico}
-
-{\bf Consideraciones sobre el voto electrónico}
-\begin{itemize}
-\item Hay dos tipos: DREs (Direct Recording Electronic)  vs  EBPs (Electronic Ballot Printers).
-\item Requerimientos Básicos del Sistema de Voto Electrónico: secreto del voto, fidelidad del voto, solo los electores autorizados pueden votar, cada lector debe emitir un solo voto.
-\item No es Fácil hacer un sistema que pueda ser auditado.
-\item Problema de las amenazas.
-\item El acceso al código debe ser lo más abierto posible (Open source Software).
-\end{itemize}
-
-{\bf Casos fallidos en el mundo}
-
-\begin{itemize}
-\item Alemania : Los sistemas usados hasta el momento se declararon inconstitucionales.
-\item Holanda : dejó de usarse en 2007 al probarse que los votos podían ser leídos a varios metros de distancia (en algunas máquinas), y que los programas podían ser alterados. EEUU múltiples errores en diversos estados.
-\item India:  hackers lograron manipular los resultados con un celular. 
-\item Irlanda : evaluaron un sistema en elecciones piloto y determinaron que no se podía garantizar la integridad de ninguna elección que usara ese sistema. Costo del experimento: 54 millones de euros.
-\end{itemize}
-
-\section{Licencia Creative Commons}
-Es una organización sin fines de lucro dedicada a promover el acceso y el intercambio de cultura. Desarrolla un conjunto de instrumentos jurídicos de carácter gratuito que facilitan usar y compartir tanto la creatividad como el conocimiento.\\
-Los instrumentos jurídicos desarrollados por la organización consisten en un conjunto de “modelos de contratos de licenciamiento” o licencias de derechos de autor que ofrecen al autor de una obra una manera simple y estandarizada de otorgar permiso al público para compartir y usar su trabajo creativo bajo los términos y condiciones de su elección. En este sentido, las licencias Creative Commons permiten al autor cambiar fácilmente los términos y condiciones de derechos de autor de su obra de “todos los derechos reservados” a “algunos derechos reservados”.\\
-Las licencias Creative Commons no reemplazan a los derechos de autor, sino que se apoyan en estos para permitir elegir los términos y condiciones de la licencia de una obra de la manera que mejor satisfaga al titular de los derechos. Por tal motivo, estas licencias han sido entendidas por muchos como una manera en que los autores pueden tomar el control de cómo quieren compartir su propiedad intelectual.\\
-Existe una serie de licencias Creative Commons, cada una con diferentes configuraciones, que permite a los autores poder decidir la manera en la que su obra va a circular en internet, entregando libertad para citar, reproducir, crear obras derivadas y ofrecerla públicamente, bajo ciertas restricciones.\\
-
-Las licencias Creative Commons están compuestas por cuatro módulos de condiciones:
-\begin{itemize}
-\item Atribución (Attribution): En cualquier explotación de la obra autorizada por la licencia será necesario reconocer la autoría (obligatoria en todos los casos).
-\item No Comercial (Non commercial): La explotación de la obra queda limitada a usos no comerciales.
-\item Sin obras derivadas (No Derivate Works): La autorización para explotar la obra no incluye la posibilidad de crear una obra derivada.
-\item Compartir Igual (Share alike): La explotación autorizada incluye la creación de obras derivadas siempre que mantengan la misma licencia al ser divulgadas.
-\end{itemize}
-
-Con estas condiciones se pueden generar distintas combinaciones que producen las licencias Creative Commons:
-
-\begin{itemize}
-\item Atribución (by): Se permite cualquier explotación de la obra, incluyendo la explotación con fines comerciales y la creación de obras derivadas, la distribución de las cuales también está permitida sin ninguna restricción. Esta licencia es una licencia libre según la Freedom Defined.
-\item Reconocimiento – Compartir Igual (by-sa): Se permite el uso comercial de la obra y de las posibles obras derivadas, la distribución de las cuales se debe hacer con una licencia igual a la que regula la obra original. Esta licencia es una licencia libre según la Freedom Defined.
-\item Atribución – No Comercial (by-nc): Se permite la generación de obras derivadas siempre que no se haga con fines comerciales. Tampoco se puede utilizar la obra original con fines comerciales. Esta licencia no es una licencia libre.
-\item Atribución – No Comercial – Compartir Igual (by-nc-sa): No se permite un uso comercial de la obra original ni de las posibles obras derivadas, la distribución de las cuales se debe hacer con una licencia igual a la que regula la obra original. Esta licencia no es una licencia libre.
-\item Atribución – Sin Obra Derivada (by-nd): Se permite el uso comercial de la obra pero no la generación de obras derivadas. Esta licencia no es una licencia libre.
-\item Atribución – No Comercial – Sin Obra Derivada (by-nc-nd): No se permite un uso comercial de la obra original ni la generación de obras derivadas. Esta licencia no es una licencia libre, y es la más cercana al derecho de autor tradicional.
-\end{itemize}
-
-{\bf Obtener la licencia}\\
-
-Cuando hayas hecho tu elección tendrás la licencia adecuada para tu trabajo expresada de tres formas:
-
-\begin{itemize}
-\item Commons Deed: Es un resumen fácilmente comprensible del texto legal con los íconos relevantes.
-\item Legal Code: El código legal completo en el que se basa la licencia que elegiste.
-\item Digital Code: El código digital, que puede leer la máquina y que sirve para que los motores de búsqueda y otras aplicaciones identifiquen tu trabajo y sus condiciones de uso.
-\end{itemize}
-
-{\bf Utilizar la licencia}\\
-
-Una vez escogida la licencia tenés que incluir el ícono de Creative Commons “Algunos derechos reservados” en tu sitio, cerca de tu obra. Este ícono enlaza con el Commons Deed, de forma que todos puedan estar informados de las condiciones de la licencia. Si encontrás que alguien cometió una infracción a la licencia, entonces tendrás las bases para poder defender tus derechos.
-
-{\bf Creative commons en Argentina}\\
-
-Creative Commons Argentina está a cargo de dos organizaciones afiliadas: Fundación Vía Libre y Wikimedia Argentina.
-
-\section{Licencias libres para documentación}
-
-Las siguientes licencias reúnen las condiciones necesarias para calificarse como licencias de documentación libre.
-
-\begin{itemize}
-\item {\bf La Licencia de documentación libre de GNU o GFDL}\\
-Es una licencia copyleft para contenido libre, diseñada por la Fundación para el Software Libre (FSF) para el proyecto GNU. \\
-Esta licencia, a diferencia de otras, asegura que el material licenciado bajo la misma esté disponible de forma completamente libre, pudiendo ser copiado, redistribuido, modificado e incluso vendido siempre y cuando el material se mantenga bajo los términos de esta misma licencia (GNU GFDL). \\
-Dicha licencia fue diseñada principalmente para manuales, libros de texto y otros materiales de referencia e institucionales que acompañaran al software GNU. Sin embargo puede ser usada en cualquier trabajo basado en texto, sin que importe cuál sea su contenido.
-\item {\bf FreeBSD Documentation License}\\
-Esta es una licencia de documentación libre y permisiva, sin copyleft, incompatible con la FDL de GNU.
-\item {\bf Apple's Common Documentation License}\\
-Esta en una licencia de documentación libre, incompatible con la FDL de GNU. Es incompatible porque la sección (2c) dice «No agregue otros términos ni condiciones a esta licencia», y la FDL de GNU posee cláusulas adicionales que no están contempladas en la Common Documentation License.
-\item {\bf Open Publication License}\\
-Esta licencia puede ser utilizada como de documentación libre. Es una licencia libre con copyleft para documentación , siempre y cuando el titular del copyright no ejerza ninguna de las «OPCIONES DE LA LICENCIA» que se mencionan en la sección VI. Pero si se invoca cualquiera de esas opciones, la licencia se vuelve privativa. En cualquier caso, es incompatible con la FDL de GNU.
-    
-\end{itemize}
